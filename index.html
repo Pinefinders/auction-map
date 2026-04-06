@@ -345,9 +345,6 @@ header h1{font-family:'Playfair Display',serif;font-size:1rem;color:var(--amber-
       <button id="rp-go" onclick="planRoute()">Find Auctions Near Route</button>
       <button id="rp-hide-btn" onclick="toggleAuctionMarkers()" style="display:none">👁 Hide auctions from map</button>
       <div id="rp-status"></div>
-      <div id="rp-filter-row" style="display:none">
-        <button class="rp-filter-btn" id="rp-urgent-btn" onclick="toggleUrgentFilter()">🟢 Show this week only</button>
-      </div>
       <div id="rp-results"></div>
     </div>
   </div>
@@ -440,7 +437,7 @@ let allH = ALL_HOUSES.map(h => ({
 }));
 
 let markers = {}, activeChip = 'all', auctionsHidden = false;
-let routeLayer = null, routeHighlightLayer = null, routeResults = [], urgentOnly = false;
+let routeLayer = null, routeHighlightLayer = null, routeResults = [];
 let dragSrc = null, _routeRefreshTimer = null;
 
 function dft(d) { if(!d) return 9999; const x=new Date(d); x.setHours(0,0,0,0); return Math.round((x-today)/86400000); }
@@ -735,50 +732,18 @@ function toggleRoutePanel() {
   const p = document.getElementById('route-panel');
   p.classList.toggle('open');
   document.getElementById('route-btn').classList.toggle('on', p.classList.contains('open'));
-  // Restore hidden markers if panel is being closed
-  if (!p.classList.contains('open') && auctionsHidden) toggleAuctionMarkers();
-}
-
-function toggleUrgentFilter() {
-  urgentOnly = !urgentOnly;
-  const btn = document.getElementById('rp-urgent-btn');
-  btn.classList.toggle('on', urgentOnly);
-  btn.textContent = urgentOnly ? '🟢 Showing this week only — show all' : '🟢 Show this week only';
-
-  // Build a set of names that are in the urgent results
-  const urgentNames = new Set(
-    routeResults
-      .filter(r => r.nextSale && dft(r.nextSale.date) <= 3)
-      .map(r => r.h.name)
-  );
-
-  // Show/hide map markers accordingly
-  routeResults.forEach(({ h }) => {
-    const m = markers[h.name];
-    if (!m) return;
-    if (urgentOnly) {
-      urgentNames.has(h.name) ? m.addTo(map) : m.remove();
-    } else {
-      m.addTo(map); // restore all route results
-    }
-  });
-
-  renderRouteResults();
+  // Restore all markers when panel closes
+  if (!p.classList.contains('open')) {
+    if (auctionsHidden) toggleAuctionMarkers();
+    else buildSB(filteredH()); // restore chip-filtered view
+  }
 }
 
 function renderRouteResults() {
   const res = document.getElementById('rp-results');
   res.innerHTML = '';
-  const list = urgentOnly
-    ? routeResults.filter(r => r.nextSale && dft(r.nextSale.date) <= 3)
-    : routeResults;
 
-  if (urgentOnly && !list.length) {
-    res.innerHTML = '<div style="font-size:.72rem;color:rgba(246,241,233,.4);text-align:center;padding:8px">No auctions within 3 days on this route</div>';
-    return;
-  }
-
-  for (const { h, dist, nextSale } of list) {
+  for (const { h, dist, nextSale } of routeResults) {
     const dateStr = nextSale
       ? `<span class="rr-date ${sc(nextSale.date)}">${fd(nextSale.date)}${nextSale.time ? ' · '+nextSale.time : ''}</span>`
       : '<span style="color:rgba(246,241,233,.3);font-style:italic">No upcoming dates</span>';
@@ -885,8 +850,7 @@ async function planRoute() {
 
   goBtn.disabled = true;
   document.getElementById('rp-results').innerHTML = '';
-  document.getElementById('rp-filter-row').style.display = 'none';
-  routeResults = []; urgentOnly = false;
+  routeResults = [];
 
   if (routeLayer)          { map.removeLayer(routeLayer); routeLayer = null; }
   if (routeHighlightLayer) { map.removeLayer(routeHighlightLayer); routeHighlightLayer = null; }
@@ -930,8 +894,6 @@ async function planRoute() {
     hideBtn.style.display = 'block';
     // If auctions were hidden from a previous route, restore them
     if (auctionsHidden) { toggleAuctionMarkers(); }
-    // If urgent filter was on from a previous route, restore all markers
-    if (urgentOnly) { urgentOnly = false; Object.values(markers).forEach(m => m.addTo(map)); }
     setStatus('🔍 Finding nearby auction houses…');
 
     const houses = filteredH();
@@ -958,11 +920,13 @@ async function planRoute() {
     setStatus(`Found ${nearby.length} auction ${nearby.length===1?'house':'houses'} within ${radius} miles`, '#22c55e');
 
     routeResults = nearby;
-    urgentOnly = false;
-    document.getElementById('rp-urgent-btn').classList.remove('on');
-    document.getElementById('rp-urgent-btn').textContent = '🟢 Show this week only';
-    const hasUrgent = nearby.some(r => r.nextSale && dft(r.nextSale.date) <= 3);
-    document.getElementById('rp-filter-row').style.display = hasUrgent ? 'block' : 'none';
+
+    // Show only route result markers on the map, hide everything else
+    const nearbyNames = new Set(nearby.map(r => r.h.name));
+    Object.entries(markers).forEach(([name, m]) => {
+      nearbyNames.has(name) ? m.addTo(map) : m.remove();
+    });
+
     renderRouteResults();
 
   } catch(e) {
