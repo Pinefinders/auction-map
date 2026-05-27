@@ -426,8 +426,8 @@ header h1{font-family:'Playfair Display',serif;font-size:1rem;color:var(--amber-
       <div class="sp-section">
         <div class="sp-section-title">Source Filter</div>
         <div id="source-toggle">
-          <button class="src-btn" id="src-el" onclick="setSource('el')" title="EasyLive only">EasyLive</button>
-          <button class="src-btn on-both" id="src-both" onclick="setSource('both')" title="Show all">Both</button>
+          <button class="src-btn on-el" id="src-el" onclick="setSource('el')" title="EasyLive only">EasyLive</button>
+          <button class="src-btn" id="src-both" onclick="setSource('both')" title="Show all">Both</button>
           <button class="src-btn" id="src-sr" onclick="setSource('sr')" title="The Saleroom only">The Saleroom</button>
         </div>
       </div>
@@ -642,7 +642,7 @@ let allH = ALL_HOUSES.map(h => ({
   sales: cleanSales(RAW_DATES[h.name] || [])
 }));
 
-let markers = {}, activeChip = 'all', auctionsHidden = false, sourceFilter = 'both';
+let markers = {}, activeChip = 'all', auctionsHidden = false, sourceFilter = 'el';
 let routeLayer = null, routeHighlightLayer = null, routeResults = [];
 let dragSrc = null, _routeRefreshTimer = null;
 
