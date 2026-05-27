@@ -19,7 +19,9 @@ header{background:var(--pine-dark);border-bottom:1px solid rgba(255,255,255,.06)
 header h1{font-family:'Playfair Display',serif;font-size:1rem;color:var(--amber-lt);white-space:nowrap}
 .htag{font-size:.6rem;background:rgba(200,145,42,.15);color:var(--amber);border:1px solid rgba(200,145,42,.3);padding:2px 7px;border-radius:10px;letter-spacing:.06em;text-transform:uppercase;display:none}
 @media(min-width:480px){.htag{display:inline}}
-#updated-badge{font-size:.6rem;color:rgba(246,241,233,.35);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:2px 6px;white-space:nowrap}
+#update-status{font-size:.7rem;color:#22c55e;font-weight:600;display:flex;align-items:center;gap:4px}
+#updated-badge{font-size:.6rem;color:rgba(246,241,233,.35);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:2px 6px;white-space:nowrap;display:none}
+@media(min-width:600px){#updated-badge{display:inline}}
 .hright{font-size:.65rem;color:rgba(246,241,233,.4);display:none}
 @media(min-width:600px){.hright{display:inline}}
 
@@ -335,6 +337,7 @@ header h1{font-family:'Playfair Display',serif;font-size:1rem;color:var(--amber-
     <span class="htag">EasyLive UK</span>
   </div>
   <div style="display:flex;align-items:center;gap:8px">
+    <span id="update-status">✅ Loading dates…</span>
     <span id="updated-badge">1 May 2026</span>
     <span class="hright" id="hright">Loading…</span>
   </div>
@@ -1304,7 +1307,12 @@ function setUpdateStatus(msg, col) {
       });
       
       // Update UI badges
-      const dateStr = new Date(data.scraped_at || Date.now()).toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
+      const scrapedDate = new Date(data.scraped_at || Date.now());
+      const dateStr = scrapedDate.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
+      const dayName = scrapedDate.toLocaleDateString('en-GB', {weekday:'long'});
+      const timeStr = scrapedDate.toLocaleTimeString('en-GB', {hour:'numeric', minute:'2-digit', hour12:true});
+      
+      document.getElementById('update-status').textContent = `✅ Successfully updated - ${dayName} ${timeStr}`;
       document.getElementById('updated-badge').textContent = dateStr;
       document.getElementById('up-last-updated').textContent = `Last updated: ${dateStr}`;
       
@@ -1316,6 +1324,8 @@ function setUpdateStatus(msg, col) {
     }
   } catch(err) {
     console.warn('Failed to auto-load dates.json:', err);
+    document.getElementById('update-status').textContent = '⚠️ Using cached data';
+    document.getElementById('update-status').style.color = '#f5e642';
     // Fall back to localStorage if available
     try {
       const saved = localStorage.getItem('pf_dates');
@@ -1327,11 +1337,15 @@ function setUpdateStatus(msg, col) {
           if (dates[h.name]) h.sales = cleanSales(dates[h.name]);
         });
         if (savedDate) {
+          document.getElementById('update-status').textContent = `✅ Using cached data - ${savedDate}`;
           document.getElementById('up-last-updated').textContent = `Last updated: ${savedDate}`;
           document.getElementById('updated-badge').textContent = savedDate;
         }
       }
-    } catch(e) {}
+    } catch(e) {
+      document.getElementById('update-status').textContent = '⚠️ No data available';
+      document.getElementById('update-status').style.color = '#f87171';
+    }
   }
   
   // ── INIT (after data loads) ──────────────────────────────────────────────────
