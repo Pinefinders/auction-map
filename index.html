@@ -1285,7 +1285,7 @@ function setUpdateStatus(msg, col) {
   el.style.color = col || 'rgba(246,241,233,.5)';
 }
 
-// Auto-load dates.json on startup
+// Auto-load dates.json on startup then initialize map
 (async function autoLoadDates() {
   try {
     const response = await fetch('dates.json');
@@ -1313,17 +1313,6 @@ function setUpdateStatus(msg, col) {
         localStorage.setItem('pf_dates', JSON.stringify(data.houses));
         localStorage.setItem('pf_dates_updated', dateStr);
       } catch(e) {}
-      
-      // Re-render markers and sidebar with fresh data
-      allH.forEach(h => {
-        const m = markers[h.name];
-        if (m) {
-          const {color, pulse} = mc(h);
-          m.setIcon(mkIcon(color, 12, pulse));
-          m.bindPopup(L.popup({maxWidth:290}).setContent(buildPopup(h)));
-        }
-      });
-      buildSB(filteredH());
     }
   } catch(err) {
     console.warn('Failed to auto-load dates.json:', err);
@@ -1344,15 +1333,15 @@ function setUpdateStatus(msg, col) {
       }
     } catch(e) {}
   }
+  
+  // ── INIT (after data loads) ──────────────────────────────────────────────────
+  const mapped=allH.filter(h=>h.lat).length;
+  const withDates=allH.filter(h=>h.sales.length).length;
+  document.getElementById('hright').textContent=`${mapped} mapped · ${withDates} with dates`;
+  
+  allH.forEach(addMarker);
+  buildSB(allH);
 })();
-
-// ── INIT ──────────────────────────────────────────────────────────────────────
-const mapped=allH.filter(h=>h.lat).length;
-const withDates=allH.filter(h=>h.sales.length).length;
-document.getElementById('hright').textContent=`${mapped} mapped · ${withDates} with dates`;
-
-allH.forEach(addMarker);
-buildSB(allH);
 </script>
 </body>
 </html>
