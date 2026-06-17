@@ -2,9 +2,9 @@ name: Update auction dates
 
 on:
   schedule:
-    # 03:00 UK time. GitHub cron is UTC, so 02:00 UTC = 03:00 BST (summer)
-    # and 02:00 UTC = 02:00 GMT (winter). Close enough for a pre-dawn refresh.
-    - cron: "0 2 * * *"
+    # 02:19 UTC — odd, off-peak minute (avoids GitHub throttling runs queued
+    # on top-of-hour slots). = 03:19 BST (summer) / 02:19 GMT (winter).
+    - cron: "19 2 * * *"
   workflow_dispatch: {}   # allows manual "Run workflow" button
 
 # Allow the job to push commits back to the repo
@@ -22,10 +22,10 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -44,5 +44,6 @@ jobs:
             echo "No changes to dates.json - nothing to commit."
           else
             git commit -m "Update auction dates ($(date -u '+%Y-%m-%d %H:%M') UTC)"
-            git push
+            git pull --rebase --autostash
+            git push --force-with-lease
           fi
