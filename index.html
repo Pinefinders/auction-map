@@ -1291,7 +1291,10 @@ function setUpdateStatus(msg, col) {
 // Auto-load dates.json on startup then initialize map
 (async function autoLoadDates() {
   try {
-    const response = await fetch('dates.json');
+    // Cache-bust so the browser always pulls today's data, not a stale
+    // cached copy. Without this, the "Last updated" badge can lag a day
+    // behind the actual scrape because the device served a cached dates.json.
+    const response = await fetch('dates.json?t=' + Date.now(), { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     
