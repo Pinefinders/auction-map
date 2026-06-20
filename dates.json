@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-20T01:55:34.070264",
+  "scraped_at": "2026-06-20T07:02:42.816133",
   "houses": {
     "1888 Auctioneers": [],
     "A & C Auctions of Pendle": [
@@ -1648,7 +1648,18 @@
         "title": "Fine Art & Antique Sale"
       }
     ],
-    "JH Auctions LTD": [],
+    "JH Auctions LTD": [
+      {
+        "date": "2026-06-24",
+        "time": "10am",
+        "title": "All Day General Sale - inc; Lots of 9ct Gold, Silver Jewellery, Star Wars Items,"
+      },
+      {
+        "date": "2026-06-24",
+        "time": "4pm",
+        "title": "All Day General Sale - inc; Lots of 9ct Gold, Silver Jewellery, Star Wars Items,"
+      }
+    ],
     "John Cowell Auctions": [],
     "John Goodwin": [
       {
