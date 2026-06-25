@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-25T01:55:36.483268",
+  "scraped_at": "2026-06-25T06:41:14.600657",
   "houses": {
     "1888 Auctioneers": [],
     "A & C Auctions of Pendle": [
@@ -39,7 +39,13 @@
         "title": "Antique & Collectors Auction"
       }
     ],
-    "Abbey Auction Rooms Ltd": [],
+    "Abbey Auction Rooms Ltd": [
+      {
+        "date": "2026-06-27",
+        "time": "10am",
+        "title": "Antiques and General Auction Including Ludwig 1960s/70's Drum Kits, Silver, Book"
+      }
+    ],
     "ABC Auction": [],
     "Acanthus Auctions Ltd": [
       {
