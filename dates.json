@@ -1,8 +1,19 @@
 {
-  "scraped_at": "2026-07-02T01:55:40.376659",
+  "scraped_at": "2026-07-02T06:32:36.517699",
   "houses": {
     "1888 Auctioneers": [],
-    "A & C Auctions of Pendle": [],
+    "A & C Auctions of Pendle": [
+      {
+        "date": "2026-07-09",
+        "time": "9:30am",
+        "title": "Day 1 - Fortnightly Auction of Antiques, Collectables, Silver, Jewellery, Coins,"
+      },
+      {
+        "date": "2026-07-10",
+        "time": "9:30am",
+        "title": "DAY 2  -Books, mainly first editions, many signed, sold without reserve"
+      }
+    ],
     "A 1 Collectables Antiques Auctions": [],
     "A.S.H. Auctions (ASH)": [],
     "A7 Waverley Auctions Ltd": [
