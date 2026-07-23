@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-22T05:51:03.201823",
+  "scraped_at": "2026-07-23T01:55:32.461786",
   "houses": {
     "1888 Auctioneers": [],
     "A & C Auctions of Pendle": [
@@ -29,14 +29,15 @@
         "title": "Antique & Collectors Auction"
       }
     ],
-    "Abbey Auction Rooms Ltd": [],
+    "Abbey Auction Rooms Ltd": [
+      {
+        "date": "2026-07-25",
+        "time": "10am",
+        "title": "Antiques and General Auction Including Kawasaki Motorbike, Industrial Sewing Mac"
+      }
+    ],
     "ABC Auction": [],
     "Acanthus Auctions Ltd": [
-      {
-        "date": "2026-07-22",
-        "time": "7pm",
-        "title": "Marcus's Scintillating Timed Auction of the Lost, Lonely and Looking for a Home!"
-      },
       {
         "date": "2026-08-05",
         "time": "11am",
@@ -47,19 +48,19 @@
       {
         "date": "2026-07-29",
         "time": "7pm",
-        "title": "Watches, Books, Collectables, Mirrors, Garden Items, pictures, jewellery, furnit"
+        "title": "Watches, Books, Collectables, Mirrors, Garden Items, Pictures, Jewellery, Furnit"
       }
     ],
     "Acreman St. Antiques Auction": [
       {
         "date": "2026-07-30",
         "time": "10am",
-        "title": "2-Day Auction of General Antiques 30th July : Garden, Paintings, Oriental, Books"
+        "title": "2-Day Auction of General Antiques 30th July: Garden, Paintings, Oriental, Books,"
       },
       {
         "date": "2026-07-31",
         "time": "10am",
-        "title": "2-Day Auction of General Antiques 30th July : Garden, Paintings, Oriental, Books"
+        "title": "2-Day Auction of General Antiques 30th July: Garden, Paintings, Oriental, Books,"
       }
     ],
     "AJ Auctions Fife Ltd": [
@@ -79,16 +80,10 @@
       {
         "date": "2026-08-04",
         "time": "10:30am",
-        "title": "Tuesday 4th August: Gold, Silver, Diamonds, Emeralds, Medals, Watches, Pens, Des"
+        "title": "Tuesday 4th August: Gold, Silver, Diamonds, Louis Vuitton, Coach, Longines, Omeg"
       }
     ],
-    "Altona Auctions - L S Henry Limited": [
-      {
-        "date": "2026-07-22",
-        "time": "6pm",
-        "title": "This Sale has Original Artwork, Modern New/Used Furniture, Antiques, Collectable"
-      }
-    ],
+    "Altona Auctions - L S Henry Limited": [],
     "Amersham Auction Rooms": [
       {
         "date": "2026-07-23",
@@ -146,7 +141,23 @@
     "Arete Art": [],
     "Argents Auctioneers Ltd": [],
     "Argyll Etkin Limited": [],
-    "Arthur Johnson & Sons": [],
+    "Arthur Johnson & Sons": [
+      {
+        "date": "2026-07-25",
+        "time": "9:30am",
+        "title": "The Saturday Auctions 25th July 2026"
+      },
+      {
+        "date": "2026-07-25",
+        "time": "9:30am",
+        "title": "The Saturday Auctions 25th July 2026"
+      },
+      {
+        "date": "2026-07-25",
+        "time": "9:30am",
+        "title": "The Saturday Auctions 25th July 2026"
+      }
+    ],
     "Ashley Waller Ltd": [
       {
         "date": "2026-07-29",
@@ -188,7 +199,13 @@
     ],
     "Aubreys": [],
     "Auction Cash": [],
-    "Auction Keynes": [],
+    "Auction Keynes": [
+      {
+        "date": "2026-07-26",
+        "time": "4pm",
+        "title": "VW Golf Clipper Convertible, Country Roses, Jewellery, Books, Antiques, Furnitur"
+      }
+    ],
     "Auction Plus": [],
     "Auction247": [],
     "Auctioneum Ltd": [],
@@ -219,11 +236,6 @@
     "B Frank & Son": [],
     "Bamfords Auctioneers & Valuers": [
       {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "The Bakewell Two Day Fine Art and Antique Sale"
-      },
-      {
         "date": "2026-07-23",
         "time": "10am",
         "title": "The Bakewell Two Day Fine Art and Antique Sale"
@@ -242,9 +254,20 @@
         "date": "2026-08-05",
         "time": "10:30am",
         "title": "The Bakewell Country Home Interiors & Collectors Auction including Furniture, Ce"
+      },
+      {
+        "date": "2026-08-06",
+        "time": "10am",
+        "title": "The Age of Curiosity: Objects of Virtue, Collections and Works from the Library"
       }
     ],
-    "Bank Hall Auctions": [],
+    "Bank Hall Auctions": [
+      {
+        "date": "2026-07-27",
+        "time": "9:30am",
+        "title": "Live Weekly Auction of Collectables, Antiques, Gold, Silver, Jewellery, Coins, F"
+      }
+    ],
     "Batemans of Stamford": [],
     "BBR Auctions": [],
     "Bearnes Hampton & Littlewood": [
@@ -347,14 +370,14 @@
     ],
     "Bourne End Auction Rooms Ltd": [
       {
-        "date": "2026-07-22",
-        "time": "10:30am",
-        "title": "Jewellery, Silver, Coins, Home Furnishings & Collectables - Online Only **We Do "
-      },
-      {
         "date": "2026-07-29",
         "time": "10:30am",
-        "title": "Toys & Pens Followed by Home Furnishings & Collectables - Online Only **We Do No"
+        "title": "Toys & Pens followed by Home Furnishings & Collectables - Online Only **We Do No"
+      },
+      {
+        "date": "2026-08-05",
+        "time": "10:30am",
+        "title": "Clocks & Watches followed by Antiques & Collectables - Online Only **We Do Not O"
       }
     ],
     "Bowler & Binnie Ltd": [
@@ -495,13 +518,7 @@
         "title": "The Sunday Auction: Vintage Toys & Retro Star Wars Collectibles"
       }
     ],
-    "Cadmore Auctions": [
-      {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Three-Day General Auction (Jewellery, Watches, Designer Items, Militaria, Coins,"
-      }
-    ],
+    "Cadmore Auctions": [],
     "Cambridgeshire Philatelic Auctions Ltd": [],
     "Canalbank Auction": [
       {
@@ -537,26 +554,38 @@
         "title": "Jewellery, Silver, Watches & Gold Coins"
       }
     ],
-    "Cardiff City Auctions Limited": [],
+    "Cardiff City Auctions Limited": [
+      {
+        "date": "2026-08-02",
+        "time": "1pm",
+        "title": "General Auction to include Antiques and Collectables"
+      }
+    ],
     "Carn Brea Auctions Ltd": [
       {
         "date": "2026-07-24",
         "time": "5pm",
         "title": "Collectors Auction"
+      },
+      {
+        "date": "2026-07-28",
+        "time": "5pm",
+        "title": "General Auction"
       }
     ],
-    "Castleblair Auctioneers": [],
+    "Castleblair Auctioneers": [
+      {
+        "date": "2026-08-16",
+        "time": "10:30am",
+        "title": "Antique & General Sale."
+      }
+    ],
     "Cato Crane Auctioneers": [],
     "Cavendish Philatelic Auctions Ltd": [],
     "Cedar Auctions": [],
     "Charles Miller Ltd": [],
     "Charles Phillips Online": [],
     "Charterhouse Auctioneers": [
-      {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Silver & Silver Plate, Jewellery & Watches"
-      },
       {
         "date": "2026-07-23",
         "time": "10am",
@@ -580,16 +609,6 @@
     ],
     "Chaucer Auctions": [
       {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Live Autograph Entertainment, Sport, Space, Music and Historical"
-      },
-      {
-        "date": "2026-07-22",
-        "time": "6pm",
-        "title": "Autograph Auction Historic, Concorde, Military Signed Books"
-      },
-      {
         "date": "2026-07-24",
         "time": "10am",
         "title": "Live Autograph Entertainment, Sport, Space, Music and Historical"
@@ -601,6 +620,16 @@
       },
       {
         "date": "2026-07-28",
+        "time": "10am",
+        "title": "Live Autograph Entertainment, Sport, Space, Music and Historical"
+      },
+      {
+        "date": "2026-07-28",
+        "time": "6pm",
+        "title": "Autograph Auction TV/ Film, Sport, Space, Historic, Concorde, Military, Politics"
+      },
+      {
+        "date": "2026-07-30",
         "time": "10am",
         "title": "LIVE AUTOGRAPH ENTERTAINMENT, SPORT, SPACE, MUSIC AND HISTORICAL"
       }
@@ -837,7 +866,13 @@
       }
     ],
     "Deal Auction House": [],
-    "Devon Online Auctions": [],
+    "Devon Online Auctions": [
+      {
+        "date": "2026-07-24",
+        "time": "10am",
+        "title": "Sale of Jewellery & Watches"
+      }
+    ],
     "Doncaster Auction Centre": [
       {
         "date": "2026-07-23",
@@ -917,7 +952,7 @@
       {
         "date": "2026-07-30",
         "time": "6pm",
-        "title": "Auction to include, Antiques, Gold and Silver Jewellery, Art, Ceramics, General "
+        "title": "Auction to include, Garden Ornaments, Garden Tools & Furniture, Cameras, Tools, "
       },
       {
         "date": "2026-08-01",
@@ -926,11 +961,6 @@
       }
     ],
     "Duke's": [
-      {
-        "date": "2026-07-22",
-        "time": "10:30am",
-        "title": "The Summer Auction"
-      },
       {
         "date": "2026-07-23",
         "time": "10:30am",
@@ -966,11 +996,6 @@
     ],
     "Edwins Auctioneers and Valuers Ltd": [
       {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Edwins Auctioneers July Auction of Antiques, Unique Items from Ronnie O'Sullivan"
-      },
-      {
         "date": "2026-08-12",
         "time": "10am",
         "title": "Edwins Auctioneers August Auction of Antiques, Collectables, Silver, Jewellery, "
@@ -989,6 +1014,11 @@
         "date": "2026-10-14",
         "time": "10am",
         "title": "Edwins Auctioneers October Auction of Antiques, Collectables, Silver, Jewellery,"
+      },
+      {
+        "date": "2026-11-04",
+        "time": "10am",
+        "title": "Edwins Auctioneers November Auction of Antiques, Collectables, Silver, Jewellery"
       }
     ],
     "Eldreds Auctioneers & Valuers": [
@@ -1021,11 +1051,6 @@
     "Elephant House Auctions": [],
     "Elite Auctions": [
       {
-        "date": "2026-07-22",
-        "time": "10:30am",
-        "title": "Specialist Collectables Auction - to include Collectables, Gold Jewellery, Silve"
-      },
-      {
         "date": "2026-07-29",
         "time": "10:30am",
         "title": "Specialist Collectables Auction - to include Collectables, Gold Jewellery, Silve"
@@ -1047,18 +1072,28 @@
     "Etrusca Auctions": [
       {
         "date": "2026-07-23",
-        "time": "10am",
+        "time": "4pm",
         "title": "Estate and Fine Jewellery Sale"
       }
     ],
     "F Turner & Sons": [
       {
+        "date": "2026-07-29",
+        "time": "10am",
+        "title": "F TURNER & SONS Pocket & Wristwatches |Costly Modern Furnishings| Collectibles| "
+      },
+      {
         "date": "2026-07-30",
         "time": "1:30pm",
-        "title": "F Turner & Sons - Fine Art Sale"
+        "title": "F Turner & Sons - Fine Art Sale - the Estate of David and Sarah Beazley\nA Collec"
       }
     ],
     "Fieldings Auctioneers Ltd": [
+      {
+        "date": "2026-07-29",
+        "time": "10am",
+        "title": "Timed Sale - Online Only"
+      },
       {
         "date": "2026-07-30",
         "time": "10am",
@@ -1316,6 +1351,11 @@
         "date": "2026-07-23",
         "time": "5pm",
         "title": "House Clearance, Bankrupt and New Stock, Small Collectables, and General Items U"
+      },
+      {
+        "date": "2026-08-30",
+        "time": "6pm",
+        "title": "Timed Auction - No Reserve - House Clearance, Joblots, New Goods - UK Bidding On"
       }
     ],
     "Harrisons Auction Centre": [
@@ -1327,13 +1367,7 @@
     ],
     "Harrisons Auction Rooms": [],
     "Harrogate Auction Centre": [],
-    "Hartleys Auctions Ltd": [
-      {
-        "date": "2026-07-22",
-        "time": "9:30am",
-        "title": "Home Furnishings & Collectables"
-      }
-    ],
+    "Hartleys Auctions Ltd": [],
     "Hartwell Auctions Ltd": [
       {
         "date": "2026-07-26",
@@ -1371,18 +1405,19 @@
     "Hidden Gem Auctions": [],
     "Homefront Auctions": [],
     "Hosker Haynes Auctioneers": [],
-    "House & Son Auctioneers & Valuers": [],
+    "House & Son Auctioneers & Valuers": [
+      {
+        "date": "2026-07-28",
+        "time": "9:30am",
+        "title": "Antiques & Collectables - Live Online Only Sale - Viewing by Appointment Only\r\n*"
+      }
+    ],
     "HRD Auction Rooms Ltd": [],
     "HT Auctions": [],
     "Huddersfield Auctions": [],
     "Hutchinson Scott Auctioneers": [],
     "Hyperion Auctions": [],
     "Iain M Smith Auctioneers and Valuers": [
-      {
-        "date": "2026-07-22",
-        "time": "9:30am",
-        "title": "Four Day Auction of Garden Furniture & Stoneware, Tools, Ceramics, Glassware, Je"
-      },
       {
         "date": "2026-07-23",
         "time": "9:30am",
@@ -1399,14 +1434,19 @@
         "date": "2026-09-02",
         "time": "11am",
         "title": "Auction of Fine Art, Antiques, Furniture, China and Ceramics, Toys, Silver, Book"
+      },
+      {
+        "date": "2026-09-10",
+        "time": "2pm",
+        "title": "Timed Auction of Unsold Items from 02/09/2026 Sale. To\r\ninclude: Antique Furnitu"
+      },
+      {
+        "date": "2026-10-21",
+        "time": "11am",
+        "title": "Auction of Fine Art, Antiques, Furniture, China and Ceramics, Toys, Silver, Book"
       }
     ],
     "Irita Marriott Auctioneers and Valuers Ltd": [
-      {
-        "date": "2026-07-22",
-        "time": "9:30am",
-        "title": "July Two Day Antique and Collectors Auction including Ceramics, Asian Ceramics a"
-      },
       {
         "date": "2026-07-23",
         "time": "9:30am",
@@ -1447,11 +1487,6 @@
     "James & Sons Auctioneers": [],
     "Jefferys Auctions": [
       {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Interiors & Jewellery"
-      },
-      {
         "date": "2026-08-12",
         "time": "10am",
         "title": "Interiors & Jewellery"
@@ -1470,20 +1505,14 @@
         "date": "2026-10-14",
         "time": "10am",
         "title": "Interiors & Jewellery"
-      }
-    ],
-    "JH Auctions LTD": [
-      {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "All Day General Sale - Inc; Rattan Furniture, Antique Furniture, Wood Working To"
       },
       {
-        "date": "2026-07-22",
-        "time": "4pm",
-        "title": "All Day General Sale - Inc; Rattan Furniture, Antique Furniture, Wood Working To"
+        "date": "2026-11-04",
+        "time": "10am",
+        "title": "Collectors Sale Coins, Toys, Militaria. Also Jewellery, Furniture & Effects."
       }
     ],
+    "JH Auctions LTD": [],
     "John Cowell Auctions": [
       {
         "date": "2026-07-24",
@@ -1493,9 +1522,9 @@
     ],
     "John Goodwin": [
       {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "A Mostly Unreserved General Interiors, Furniture, Tools, & Collectibles Auction "
+        "date": "2026-07-28",
+        "time": "11:59pm",
+        "title": "A timed and unreserved auction sale"
       },
       {
         "date": "2026-09-02",
@@ -1510,18 +1539,12 @@
     ],
     "John Milne Auctioneers LLP": [
       {
-        "date": "2026-07-22",
+        "date": "2026-08-05",
         "time": "9:30am",
-        "title": "A Good General Sale."
+        "title": "Interesting General Sale"
       }
     ],
-    "John Nicholson's Fine Art Auctioneers & Valuers": [
-      {
-        "date": "2026-07-22",
-        "time": "10:30am",
-        "title": "Oriental and Fine Art Sale"
-      }
-    ],
+    "John Nicholson's Fine Art Auctioneers & Valuers": [],
     "John Rolfe Auctions": [
       {
         "date": "2026-09-12",
@@ -1604,11 +1627,6 @@
     ],
     "Kinghams Auctioneers": [
       {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Fine, Decorative Arts and Design"
-      },
-      {
         "date": "2026-07-23",
         "time": "10am",
         "title": "Fine, Decorative Arts and Design"
@@ -1618,16 +1636,17 @@
       {
         "date": "2026-07-23",
         "time": "7pm",
-        "title": "A second chance sale including Victorian, Edwardian & Mid Century Furniture, Whi"
+        "title": "A Second Chance Sale including Victorian, Edwardian & Mid Century Furniture, Whi"
       }
     ],
-    "KLM Whyte Auctioneers": [],
-    "Landles Auctioneers 1856 Ltd": [
+    "KLM Whyte Auctioneers": [
       {
-        "date": "2026-07-22",
+        "date": "2026-07-31",
         "time": "10am",
-        "title": "Two Day Auction of Antiques & Collectables"
-      },
+        "title": "Antiques, Collectables and Ceramics"
+      }
+    ],
+    "Landles Auctioneers 1856 Ltd": [
       {
         "date": "2026-07-23",
         "time": "10am",
@@ -1638,11 +1657,6 @@
     "Lanora House Auctions Limited": [],
     "Lawrence Fine Art Auctioneers Ltd, Crewkerne": [],
     "Lawrences Auctioneers Ltd": [
-      {
-        "date": "2026-07-22",
-        "time": "9:30am",
-        "title": "Three Day Sale of Antiques and Collectables"
-      },
       {
         "date": "2026-07-23",
         "time": "9:30am",
@@ -2046,7 +2060,13 @@
         "title": "Great Britain and All World Stamp Timed Auction"
       }
     ],
-    "Nesbits Auctions Ltd": [],
+    "Nesbits Auctions Ltd": [
+      {
+        "date": "2026-07-29",
+        "time": "10am",
+        "title": "29th July Auction of General Auction of Antiques, Jewellery and Collectables"
+      }
+    ],
     "Nick Barber Auctions": [],
     "NLB Auctions": [
       {
@@ -2103,13 +2123,7 @@
     ],
     "P.F. Windibank": [],
     "Parker Fine Art Auctions": [],
-    "Paul Bebb Auctioneer": [
-      {
-        "date": "2026-07-22",
-        "time": "11am",
-        "title": "Antique & Modern Household Furniture & Effects (House Clearances) Barn Find Pors"
-      }
-    ],
+    "Paul Bebb Auctioneer": [],
     "Paul Beighton Auctioneers": [
       {
         "date": "2026-08-03",
@@ -2129,7 +2143,7 @@
       {
         "date": "2026-09-14",
         "time": "10am",
-        "title": "Antiques & Collectables - Collection by appointment"
+        "title": "Antiques & Collectables - Collection by Appointment"
       },
       {
         "date": "2026-09-28",
@@ -2141,7 +2155,7 @@
       {
         "date": "2026-07-24",
         "time": "9:45am",
-        "title": "Collectible Whisky & Cased Wines, Ola Gorie Gold & Silver, Antique Pub Memorabil"
+        "title": "Collectors Sales including Investment Whisky & Cased Wines, Ola Gorie Gold & Sil"
       }
     ],
     "Perkins George Mawer & Co": [],
@@ -2161,6 +2175,11 @@
       }
     ],
     "Phixius Auctions": [
+      {
+        "date": "2026-07-31",
+        "time": "10am",
+        "title": "Monthly Antique & Interiors"
+      },
       {
         "date": "2026-08-07",
         "time": "10am",
@@ -2237,12 +2256,12 @@
       {
         "date": "2026-07-30",
         "time": "10:30am",
-        "title": "General Sale"
+        "title": "Antiques, Collectables, Jewellery, Silver, Modern Collectables, Stamps, Watches "
       },
       {
         "date": "2026-07-31",
         "time": "10:30am",
-        "title": "General Sale"
+        "title": "Antiques, Collectables, Jewellery, Silver, Modern Collectables, Stamps, Watches "
       }
     ],
     "Prestige Auctions": [],
@@ -2250,7 +2269,7 @@
       {
         "date": "2026-07-26",
         "time": "5pm",
-        "title": "DJ equipment Antiques, Tools, Industrial & Decorative Interiors Auction featurin"
+        "title": "DJ Equipment Antiques, Tools, Industrial & Decorative Interiors Auction featurin"
       }
     ],
     "Pump House Specialist Auctions Ltd": [
@@ -2521,7 +2540,12 @@
         "title": "A Lovely Sale to Consist of Garden Furniture Pots and Ornaments and Moving onto "
       },
       {
-        "date": "2026-08-08",
+        "date": "2026-08-12",
+        "time": "10am",
+        "title": "General Sale - More Details to Follow"
+      },
+      {
+        "date": "2026-08-26",
         "time": "10am",
         "title": "General Sale - More Details to Follow"
       }
@@ -2559,12 +2583,12 @@
     "Spicer's Auctioneers": [
       {
         "date": "2026-07-25",
-        "time": "12pm",
+        "time": "11am",
         "title": "Automobilia and Spares"
       },
       {
         "date": "2026-07-25",
-        "time": "12pm",
+        "time": "1pm",
         "title": "Classic Cars and Motorcycles"
       },
       {
@@ -2612,23 +2636,29 @@
       }
     ],
     "Stephen Fitzpatrick & Co": [],
-    "Sterling Vault Auctioneers": [],
+    "Sterling Vault Auctioneers": [
+      {
+        "date": "2026-07-28",
+        "time": "10:30am",
+        "title": "Live Auction of Luxury Watches - Featuring Cartier, Rolex, Omega & More"
+      }
+    ],
     "Stevens Auctioneers": [],
     "Stride & Son Auctions Ltd": [
       {
         "date": "2026-07-29",
         "time": "11am",
-        "title": "Three-Day Auction,\nTo include: The Dame Patricia Routledge Collection"
+        "title": "Three-Day Auction.\r\nTo include: The Dame Patricia Routledge Collection"
       },
       {
         "date": "2026-07-30",
         "time": "11am",
-        "title": "Three-Day Auction,\nTo include: The Dame Patricia Routledge Collection"
+        "title": "Three-Day Auction.\r\nTo include: The Dame Patricia Routledge Collection"
       },
       {
         "date": "2026-07-31",
         "time": "10am",
-        "title": "Three-Day Auction,\nTo include: The Dame Patricia Routledge Collection"
+        "title": "Three-Day Auction.\r\nTo include: The Dame Patricia Routledge Collection"
       },
       {
         "date": "2026-09-03",
@@ -2728,13 +2758,7 @@
       }
     ],
     "Tayler and Fletcher": [],
-    "Taylors Auctions (Montrose) Ltd": [
-      {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "3-Day Auction of Paintings, Interiors, Furniture, Porcelain & General"
-      }
-    ],
+    "Taylors Auctions (Montrose) Ltd": [],
     "Terry's Sports Auctions": [
       {
         "date": "2026-07-25",
@@ -2774,11 +2798,6 @@
     "The Coinery": [],
     "The Great Western Auctions Ltd": [
       {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Antiques & Collectables to include Furniture, Pictures, Ceramics, Music & Musica"
-      },
-      {
         "date": "2026-07-23",
         "time": "10am",
         "title": "Antiques & Collectables to include Furniture, Pictures, Ceramics, Music & Musica"
@@ -2795,6 +2814,11 @@
       },
       {
         "date": "2026-08-05",
+        "time": "10am",
+        "title": "Antiques & Collectables to include Furniture, Pictures, Ceramics, Jewellery & Si"
+      },
+      {
+        "date": "2026-08-06",
         "time": "10am",
         "title": "Antiques & Collectables to include Furniture, Pictures, Ceramics, Jewellery & Si"
       }
@@ -2854,7 +2878,7 @@
       {
         "date": "2026-07-30",
         "time": "11:30am",
-        "title": "250 LOTS OF ANTIQUARIAN & COLLECTABLE BOOKS,\r\nbeing Part Two of books from the l"
+        "title": "250 Lots of Antiquarian & Collectable Books\r\nbeing Part Two of Books from the Li"
       },
       {
         "date": "2026-08-03",
@@ -2983,19 +3007,8 @@
         "title": "Arms, Armour, Militaria & Collectibles"
       }
     ],
-    "Walton & Walton": [
-      {
-        "date": "2026-07-22",
-        "time": "10pm",
-        "title": "Timed Auction to include Jewellery, Antiques, Artwork, Vintage Electronics, Furn"
-      }
-    ],
+    "Walton & Walton": [],
     "Warren and Wignall Auctioneers": [
-      {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Jewellery, Watches, Silver & Coins"
-      },
       {
         "date": "2026-08-05",
         "time": "9:30am",
@@ -3015,20 +3028,14 @@
         "date": "2026-09-23",
         "time": "10am",
         "title": "Jewellery, Watches, Silver & Coins"
-      }
-    ],
-    "Warrington & Northwich Auctioneers & Valuers": [
-      {
-        "date": "2026-07-22",
-        "time": "9am",
-        "title": "Warrington & Northwich Auction"
       },
       {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "Warrington & Northwich Auction"
+        "date": "2026-10-07",
+        "time": "9:30am",
+        "title": "General, Antiques & Interiors"
       }
     ],
+    "Warrington & Northwich Auctioneers & Valuers": [],
     "Warwick & Warwick Ltd": [
       {
         "date": "2026-08-05",
@@ -3042,11 +3049,6 @@
       }
     ],
     "Warwick Auctions Ltd": [
-      {
-        "date": "2026-07-22",
-        "time": "10am",
-        "title": "General, Antiques & Collectibles"
-      },
       {
         "date": "2026-08-05",
         "time": "10am",
@@ -3226,13 +3228,7 @@
         "title": "Antiques, Vintage, Collectors' and General Auction starting with Collective Silv"
       }
     ],
-    "Wotton Auction Rooms": [
-      {
-        "date": "2026-07-22",
-        "time": "9:30am",
-        "title": "Our July Antique & Interiors Sale"
-      }
-    ],
+    "Wotton Auction Rooms": [],
     "Wye Valley Auctions": [
       {
         "date": "2026-08-02",
@@ -3251,7 +3247,7 @@
       {
         "date": "2026-07-28",
         "time": "10am",
-        "title": "Yorkshire Auctions Sale - Fine Art, Natural Stones, Gold, Silver, Dutch Street O"
+        "title": "Yorkshire Auctions Sale - Fine Art, Natural Diamonds, Gold, Silver, Dutch Street"
       }
     ],
     "Yorkshire Stamp Auctions": [
